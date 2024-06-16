@@ -36,7 +36,7 @@ header h1 {
 }
 
 .header-background {
-  background-image: url("/images/engineer.jpg");
+  background-image: url("images/engineer.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -227,7 +227,7 @@ footer {
   }
 
   .header-background {
-    background-image: url("/images/factorio-bg5.jpg");
+    background-image: url("images/factorio-bg5.jpg");
     height: 300px;
   }
 
