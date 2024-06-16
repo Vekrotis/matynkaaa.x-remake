@@ -1,0 +1,85 @@
+/* o-mne.css */
+
+/* Ensure links inside buttons do not have underline */
+.additional-section .socialni-site button a {
+  text-decoration: none; /* Remove underline */
+}
+
+.additional-section .socialni-site {
+  display: flex;
+  gap: 10px;
+}
+.additional-section .socialni-site button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px; /* Adjust size as needed */
+  height: 55px; /* Adjust size as needed */
+  background-color: #2a2a2a; /* Gray background color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.additional-section .socialni-site button:hover {
+  background-color: #ff9900; /* Adjust hover background color */
+}
+
+.additional-section .socialni-site button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #d6d6d6; /* Icon color */
+  font-size: 28px; /* Make icons bigger */
+}
+
+/* Adjust size and position for mobile */
+@media (max-width: 768px) {
+  .additional-section .socialni-site {
+    flex-direction: row; /* Keep icons in a row on mobile */
+    justify-content: flex-start; /* Align icons to the left */
+  }
+
+  .additional-section .socialni-site button {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; /* Add space between icons */
+  }
+
+  .additional-section .socialni-site button:last-child {
+    margin-right: 0; /* Remove margin from last icon */
+  }
+
+  .additional-section .socialni-site button a {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+}
+
+/* Adjust position for larger screens (PC view) */
+@media (min-width: 769px) {
+  .additional-section {
+    margin-top: 15px; /* Space above social icons on PC */
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .additional-section .socialni-site {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 15px; /* Space to the right of Moje zájmy */
+  }
+
+  .additional-section .socialni-site button {
+    width: 55px; /* Adjust size as needed */
+    height: 55px; /* Adjust size as needed */
+  }
+
+  .additional-section .socialni-site button a {
+    font-size: 28px; /* Adjust font size for PC view */
+  }
+}
