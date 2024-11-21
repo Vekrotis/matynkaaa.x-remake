@@ -1,11 +1,9 @@
-/* Reset default margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles */
 body {
   display: flex;
   flex-direction: column;
@@ -14,7 +12,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #121212;
   color: #e0e0e0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 header {
@@ -103,7 +101,7 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
 .random-text {
@@ -115,8 +113,8 @@ main {
 .zajimavost,
 .zajimavost2,
 .zajimavost3 {
-  width: 100%; /* Ensure sections take full width */
-  max-width: 800px; /* Limit width to avoid stretching on larger screens */
+  width: 100%;
+  max-width: 800px;
   background-color: #2a2a2a;
   padding: 15px;
   border-radius: 8px;
@@ -135,7 +133,7 @@ footer {
   padding: 20px;
   text-align: center;
   width: 100%;
-  border-top: 3px solid #ff9800; /* Small orange line at the top of the footer */
+  border-top: 3px solid #ff9800;
 }
 
 /* Mobile styles */
@@ -153,10 +151,10 @@ footer {
 
   nav {
     display: none;
-    flex-direction: column; /* Vertical layout for mobile */
-    position: fixed; /* Position at the top */
-    background-color: rgba(30, 30, 30, 0.9); /* Transparent background */
-    top: 60px; /* Position below the header */
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(30, 30, 30, 0.9);
+    top: 60px;
     right: 20px;
     left: 20px;
     padding: 15px;
@@ -187,19 +185,19 @@ footer {
   #menu-toggle {
     display: inline-block;
     padding: 8px;
-    position: fixed; /* Fixed position */
+    position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 15; /* Ensure it's above the menu */
+    z-index: 15;
     background: none;
     border: none;
     color: #e0e0e0;
     font-size: 1.5em;
-    transition: all 0.3s ease; /* Smooth transitions */
+    transition: all 0.3s ease;
   }
 
   .menu-opened #menu-toggle {
-    z-index: 20; /* Higher z-index when menu is open */
+    z-index: 20;
   }
 
   .menu-opened #menu {
@@ -211,7 +209,6 @@ footer {
   }
 }
 
-/* PC styles */
 @media (min-width: 769px) {
   header {
     height: 300px;
@@ -233,14 +230,14 @@ footer {
 
   nav {
     display: flex;
-    flex-direction: row; /* Horizontal layout */
-    justify-content: flex-end; /* Align to the right */
-    background-color: transparent; /* Transparent background */
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
     padding: 0;
     gap: 10px;
-    position: absolute; /* Position to the top right */
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   nav a {
@@ -266,28 +263,28 @@ footer {
   main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
   }
 
   .random-text {
     width: 100%;
-    max-width: 100%; /* Make random-text take full width */
+    max-width: 100%;
   }
 
   .content-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 2000px; /* Set maximum width for the content */
-    margin-top: 10px; /* Adjust margin as needed */
+    max-width: 2000px;
+    margin-top: 10px;
   }
 
   .reklama {
-    width: 100%; /* 60% width for reklama */
+    width: 100%;
   }
 
   .zajimavost-container {
-    width: 100%; /* 35% width for zajimavost container */
+    width: 100%;
     display: flex;
     margin-left: 15px;
     flex-direction: column;
@@ -332,9 +329,9 @@ footer {
 }
 
 .reklama a {
-  color: #ff9800; /* Changes to blue when hovered */
+  color: #ff9800; 
 }
 
 .reklama a:hover {
-  color: #fab534; /* Changes visited links  */
+  color: #fab534;
 }
